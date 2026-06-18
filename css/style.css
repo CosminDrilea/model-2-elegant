@@ -1,1 +1,210 @@
+html{
+  scroll-behavior:smooth;
+}
 
+body{
+  margin:0;
+  padding:0;
+  background:#f7f3ed;
+  color:#2f2f2f;
+  font-family:'Montserrat',sans-serif;
+  text-align:center;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(
+  rgba(0,0,0,0.35),
+  rgba(0,0,0,0.35)),
+  url("../images/hero.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.overlay{
+  color:white;
+}
+
+.monogram{
+  font-family:'Cormorant Garamond',serif;
+  font-size:50px;
+  letter-spacing:8px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-family:'Great Vibes',cursive;
+  font-size:110px;
+  font-weight:400;
+  margin:0;
+}
+
+.date{
+  margin-top:20px;
+  font-size:24px;
+  letter-spacing:3px;
+}
+
+/* SECTIUNI */
+
+.section{
+  padding:120px 25px;
+}
+
+h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:60px;
+  font-weight:400;
+  margin-bottom:30px;
+}
+
+.text{
+  max-width:850px;
+  margin:auto;
+  line-height:1.9;
+  font-size:20px;
+}
+
+/* BUTON */
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+
+  padding:14px 35px;
+
+  background:#c8a96b;
+  color:#fff;
+
+  text-decoration:none;
+
+  border-radius:30px;
+
+  transition:.3s;
+}
+
+.btn:hover{
+  opacity:.85;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.box{
+  width:120px;
+
+  border:1px solid #c8a96b;
+
+  padding:25px;
+
+  background:white;
+}
+
+.box span{
+  display:block;
+  font-size:42px;
+  font-weight:600;
+}
+
+/* FORMULAR */
+
+form{
+  max-width:500px;
+  margin:auto;
+}
+
+input,
+select{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+
+  border:1px solid #ddd;
+  border-radius:10px;
+
+  box-sizing:border-box;
+}
+
+button{
+  width:100%;
+
+  padding:15px;
+
+  background:#c8a96b;
+  color:white;
+
+  border:none;
+  border-radius:30px;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+/* ANIMATIE */
+
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+/* MOBIL */
+
+@media(max-width:768px){
+
+.hero h1{
+  font-size:58px;
+}
+
+.monogram{
+  font-size:30px;
+}
+
+.date{
+  font-size:18px;
+}
+
+h2{
+  font-size:40px;
+}
+
+.text{
+  font-size:17px;
+}
+
+.box{
+  width:90px;
+  padding:15px;
+}
+
+.box span{
+  font-size:30px;
+}
+
+.section{
+  padding:80px 20px;
+}
+
+}
