@@ -86,3 +86,51 @@ if(form){
   });
 
 }
+document.getElementById("rsvpForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const persoane =
+parseInt(document.getElementById("persoane").value);
+
+const normal =
+parseInt(document.getElementById("meniu_normal").value);
+
+const copii =
+parseInt(document.getElementById("meniu_copii").value);
+
+const vegan =
+parseInt(document.getElementById("meniu_vegan").value);
+
+const total = normal + copii + vegan;
+
+const eroare =
+document.getElementById("eroare");
+
+eroare.style.display = "none";
+
+if(persoane === 0){
+
+eroare.innerHTML =
+"Vă rugăm să selectați numărul de persoane.";
+
+eroare.style.display = "block";
+
+return;
+
+}
+
+if(total !== persoane){
+
+eroare.innerHTML =
+"Numărul de meniuri trebuie să fie egal cu numărul de persoane. Vă rugăm să selectați tipul de meniu.";
+
+eroare.style.display = "block";
+
+return;
+
+}
+
+alert("Confirmarea a fost trimisă!");
+
+});
