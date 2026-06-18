@@ -4,126 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Oana & Cosmin</title>
+<title>Elegant Classic Wedding</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet" href="css/style.css">
 
-html{
-scroll-behavior:smooth;
-}
-
-body{
-margin:0;
-padding:0;
-background:#f7f3ed;
-color:#2f2f2f;
-font-family:'Montserrat',sans-serif;
-text-align:center;
-}
-
-section{
-padding:120px 25px;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.monograma{
-font-family:'Cormorant Garamond',serif;
-font-size:42px;
-letter-spacing:8px;
-color:#c8a96b;
-margin-bottom:25px;
-}
-
-.hero h1{
-font-family:'Great Vibes',cursive;
-font-size:95px;
-font-weight:400;
-margin:0;
-}
-
-.hero p{
-letter-spacing:3px;
-font-size:20px;
-margin-top:20px;
-}
-
-.line{
-width:140px;
-height:1px;
-background:#c8a96b;
-margin:40px auto;
-}
-
-h2{
-font-family:'Cormorant Garamond',serif;
-font-size:58px;
-font-weight:400;
-margin-bottom:25px;
-}
-
-.text{
-max-width:850px;
-margin:auto;
-line-height:1.9;
-font-size:20px;
-}
-
-.poza-miri{
-width:90%;
-max-width:750px;
-border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
-}
-
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-
-.fade.show{
-opacity:1;
-transform:none;
-}
-
-</style>
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
 
-<div class="fade">
+<div class="overlay">
 
-<div class="monograma">
-O ♥ C
+<div class="monogram">
+A ♥ M
 </div>
 
-<h1>Oana & Cosmin</h1>
+<h1>Alexandra & Matei</h1>
 
-<div class="line"></div>
-
-<p>
-INVITAȚIE DE NUNTĂ
-<br><br>
-05 Septembrie 2026
+<p class="date">
+20 Iunie 2027
 </p>
 
 </div>
 
 </section>
 
-<section>
+<!-- INVITATIE -->
 
-<div class="fade">
+<section class="section fade">
 
 <h2>Invitație</h2>
 
@@ -135,16 +48,132 @@ vă invităm să fiți alături de noi
 
 </div>
 
+</section>
+
+<!-- BISERICA -->
+
+<section class="section fade">
+
+<h2>Ceremonia religioasă</h2>
+
+<div class="text">
+
+Biserica Exemplu
+
+<br><br>
+
+Ora 18:00
+
 </div>
 
 </section>
 
-<section>
+<!-- RESTAURANT -->
 
-<h2>TEST POZĂ</h2>
+<section class="section fade">
 
-<img
-src="https://picsum.photos/800/500"
-style="width:80%;max-width:700px;">
+<h2>Recepția</h2>
+
+<div class="text">
+
+Restaurant Exemplu
+
+<br><br>
+
+<a class="btn" href="#">
+Vezi locația
+</a>
+
+</div>
 
 </section>
+
+<!-- NASI -->
+
+<section class="section fade">
+
+<h2>Nașii și părinții</h2>
+
+<div class="text">
+
+<strong>Nașii</strong>
+
+<br><br>
+
+Nume Nași
+
+<br><br><br>
+
+<strong>Părinții</strong>
+
+<br><br>
+
+Nume Familie
+
+</div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section class="section fade">
+
+<h2>Numărătoare inversă</h2>
+
+<div class="countdown">
+
+<div class="box">
+<span id="days">0</span>
+zile
+</div>
+
+<div class="box">
+<span id="hours">0</span>
+ore
+</div>
+
+<div class="box">
+<span id="minutes">0</span>
+minute
+</div>
+
+<div class="box">
+<span id="seconds">0</span>
+secunde
+</div>
+
+</div>
+
+</section>
+
+<!-- CONFIRMARE -->
+
+<section class="section fade">
+
+<h2>Confirmare prezență</h2>
+
+<form id="rsvpForm">
+
+<input
+type="text"
+placeholder="Nume și prenume"
+required>
+
+<select required>
+<option value="">Participare</option>
+<option>Particip</option>
+<option>Nu particip</option>
+</select>
+
+<button type="submit">
+Trimite confirmarea
+</button>
+
+</form>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
