@@ -73,19 +73,6 @@ showElements();
    RSVP DEMO
 ========================= */
 
-const form = document.getElementById("rsvpForm");
-
-if(form){
-
-  form.addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-    alert("Confirmarea a fost trimisă!");
-
-  });
-
-}
 document.getElementById("rsvpForm").addEventListener("submit", function(e){
 
 e.preventDefault();
