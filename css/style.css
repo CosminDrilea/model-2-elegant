@@ -212,6 +212,16 @@ button{
   transform:none;
 }
 
+footer{
+  padding:40px;
+  text-align:center;
+
+  font-size:14px;
+  color:#888;
+
+  border-top:1px solid #e5e5e5;
+}
+
 /* MOBIL */
 
 @media(max-width:768px){
@@ -247,6 +257,18 @@ h2{
 
 .section{
   padding:80px 20px;
+}
+  .navbar{
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.navbar a{
+  font-size:13px;
+}
+
+.hero h1{
+  font-size:48px;
 }
 
 }
