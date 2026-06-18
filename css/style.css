@@ -10,6 +10,12 @@ body{
   font-family:'Montserrat',sans-serif;
   text-align:center;
 }
+.line{
+  width:140px;
+  height:1px;
+  background:#c8a96b;
+  margin:50px auto;
+}
 
 /* HERO */
 
